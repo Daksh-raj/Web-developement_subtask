@@ -1,0 +1,334 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+}
+/* header styling */
+#main_header .navbar {
+  height: 10vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main_header .navbar .about_me{
+  margin-left: 3em;
+  color: orangered;
+  font-size: 3em;
+} 
+#main_header .navbar .animate__animated{
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#main_header .navbar .menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#main_header .navbar .menu a:hover {
+  text-decoration: underline;
+  color: orange;
+}
+#main_header .navbar .menu a {
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* intro part css! */
+#main_header .Intro {
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+#main_header .Intro .intro_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2em;
+  width: 60%;
+}
+#main_header .Intro .intro_content .name {
+  font-weight: bolder;
+  font-size: 25px;
+  color: red;
+}
+#main_header .Intro .intro_content .buttons #button1 {
+  background-color: red;
+  color: black;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#main_header .Intro .intro_content .buttons #button2 {
+  border: red 2px solid;
+  color: red;
+  padding: 5px;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#main_header .Intro .intro_image i{
+  font-size: 10em;
+  color: blue;
+}
+
+#main_header .Intro .intro_image img:hover {
+  /* transform: scale(2); */
+  transform: translateX(-20%) scale(1.2);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+/* css of about_me content */
+#about_me {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+#about_me .my_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+#about_me .my_image img {
+  width: 50%;
+  height: 50%;
+}
+#about_me .about_me_content {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+#about_me .about_me_content h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  color: orange;
+}
+#about_me .about_me_content p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#about_me .about_me_content p:nth-child(2n + 0) {
+  color: orange;
+}
+#about_me .about_me_content .icons i {
+  font-size: 30px;
+  padding: 15px;
+}
+/* Services_styling */
+.Services {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 50px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Services .domain_name {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  height: 60%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 35% 25%;
+  column-gap: 50px;
+  row-gap: 20px;
+  box-sizing: border-box;
+}
+.Services .domain_name div {
+  border: 2px orange solid;
+  border-radius: 5px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.Services .domain_name div i {
+  color: orange;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.Services .domain_name div h2 {
+  margin-bottom: 20px;
+}
+.Services .domain_name div p {
+  text-align: center;
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.Services .domain_name #div2 {
+  transform: scale(1.05);
+}
+.Services .domain_name #div2 i {
+  font-size: 40px;
+}
+/* css of programming languages: */
+.programming_languages {
+  margin-left: 60px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.programming_languages h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+}
+.programming_languages .languages {
+  margin-top: 20px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.programming_languages .languages div {
+  border-radius: 10px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.programming_languages .languages div i {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 3em;
+}
+.programming_languages .languages div h2 {
+  color: orange;
+  font-family: sans-serif;
+  font-size: 2em;
+}
+.programming_languages .languages div p {
+  text-align: center;
+}
+/* clients css*/
+.clients_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients {
+  margin-top: 30px;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.clients i {
+  font-size: 50px;
+  color: rebeccapurple;
+}
+.clients .client_image {
+  width: 30%;
+}
+.clients .client_image img {
+  height: 80%;
+  width: 80%;
+}
+.clients .divider{
+  border-left: 2px dashed red;
+  height: 50%;
+}
+.clients .client_feedback {
+  width: 45%;
+}
+/* get in touch css */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.get_in_touch_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.get_in_touch_container .get_forms {
+  box-sizing: border-box;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.get_in_touch_container .get_forms input {
+  height: 3rem;
+  margin: 30px;
+  width: 50%;
+  align-content: center;
+  text-align: center;
+  border: 2px solid orange;
+}
+.get_in_touch_container .get_forms button {
+  height: 3rem;
+  margin: 30px;
+  width: 50%;
+  align-content: center;
+  background-color: orange;
+}
+.get_in_touch_container .get_divider {
+  border-left: 2px solid red;
+  height: 50vh;
+  margin-right: 10px;
+}
+.get_in_touch_container .get_contact_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.get_in_touch_container .get_contact_info h1{
+  font-family: sans-serif;
+  font-size: 20px;
+  color: orange;
+  margin: 10px;
+}
+.get_in_touch_container .get_contact_info .icons{
+  font-size: 30px;
+  padding: 10px;
+}
+.get_in_touch_container .get_contact_info .icons i:hover{
+  color: orange;
+  transform: scale(1.2);
+}
